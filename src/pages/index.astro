@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+---
+
+<Layout>
+    <Nav />
+    
+    <header class="min-h-screen flex items-center px-8 md:px-16">
+        <div class="max-w-3xl mt-20">
+            <div class="mb-8 flex items-center gap-3">
+                <span class="relative flex h-2.5 w-2.5">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                </span>
+                <span class="text-xs font-medium text-zinc-400 uppercase tracking-widest">Disponible para nuevos proyectos</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-medium tracking-tight mb-8 text-zinc-100 leading-[1.1]">
+                Creamos experiencias web <span class="text-zinc-500">rápidas, limpias y elegantes</span>
+            </h1>
+            
+            <p class="text-lg text-zinc-400 max-w-xl mb-12 leading-relaxed font-light">
+                Ayudamos a los negocios a destacar en el mundo digital con diseños corporativos de vanguardia e infraestructura de alto rendimiento.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-5">
+                <a href="/contacto" class="bg-zinc-100 text-zinc-950 hover:bg-white px-7 py-3.5 rounded-full text-sm font-semibold text-center transition-all">
+                    Iniciar un proyecto
+                </a>
+                <a href="/servicios" class="bg-transparent border border-zinc-800 text-zinc-300 hover:text-zinc-100 hover:border-zinc-700 px-7 py-3.5 rounded-full text-sm font-medium text-center transition-all">
+                    Ver nuestros servicios
+                </a>
+            </div>
+        </div>
+    </header>
+</Layout>
