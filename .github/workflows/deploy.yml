@@ -1,13 +1,10 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Activa el robot cada vez que subas código a la rama principal (main)
   push:
     branches: [ main ]
-  # Permite correr este proceso manualmente si es necesario
   workflow_dispatch:
 
-# Permisos que necesita el robot para subir los archivos
 permissions:
   contents: read
   pages: write
@@ -21,6 +18,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Install, build, and upload your site
         uses: withastro/action@v3
+        with:
+          node-version: 22
 
   deploy:
     needs: build
