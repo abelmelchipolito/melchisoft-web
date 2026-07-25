@@ -7,9 +7,5 @@ export default defineConfig({
   site: 'https://melchisoft.com',
   vite: {
     plugins: [tailwindcss()]
-  },
-  trailingSlash: 'never',
-  build: {
-    format: 'file'
   }
 });
