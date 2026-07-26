@@ -358,27 +358,30 @@ import Nav from '../components/Nav.astro';
                 const answer = item.querySelector('.faq-answer');
                 const icon = item.querySelector('.faq-icon');
 
-                button.addEventListener('click', () => {
-                    const isOpen = answer.classList.contains('grid-rows-[1fr]');
+                // Verificamos que los elementos existan para que TypeScript no marque error
+                if (button && answer && icon) {
+                    button.addEventListener('click', () => {
+                        const isOpen = answer.classList.contains('grid-rows-[1fr]');
 
-                    // 1. Cerramos todas las respuestas primero (Efecto Acordeón)
-                    document.querySelectorAll('.faq-answer').forEach(a => {
-                        a.classList.remove('grid-rows-[1fr]');
-                        a.classList.add('grid-rows-[0fr]');
-                    });
-                    
-                    // Rotamos todas las flechas a su estado original
-                    document.querySelectorAll('.faq-icon').forEach(i => {
-                        i.classList.remove('rotate-180');
-                    });
+                        // 1. Cerramos todas las respuestas primero (Efecto Acordeón)
+                        document.querySelectorAll('.faq-answer').forEach(a => {
+                            a.classList.remove('grid-rows-[1fr]');
+                            a.classList.add('grid-rows-[0fr]');
+                        });
+                        
+                        // Rotamos todas las flechas a su estado original
+                        document.querySelectorAll('.faq-icon').forEach(i => {
+                            i.classList.remove('rotate-180');
+                        });
 
-                    // 2. Si la que clickeamos estaba cerrada, la abrimos
-                    if (!isOpen) {
-                        answer.classList.remove('grid-rows-[0fr]');
-                        answer.classList.add('grid-rows-[1fr]');
-                        icon.classList.add('rotate-180');
-                    }
-                });
+                        // 2. Si la que clickeamos estaba cerrada, la abrimos
+                        if (!isOpen) {
+                            answer.classList.remove('grid-rows-[0fr]');
+                            answer.classList.add('grid-rows-[1fr]');
+                            icon.classList.add('rotate-180');
+                        }
+                    });
+                }
             });
         });
     </script>
