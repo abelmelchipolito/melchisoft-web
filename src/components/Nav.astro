@@ -3,7 +3,9 @@
 const rutaActual = Astro.url.pathname;
 ---
 <nav class="fixed w-full bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800/50 z-50">
+    <!-- INICIA EL CONTENEDOR FLEX (Debe envolver al logo, menú de PC y botón) -->
     <div class="flex justify-between items-center py-6 px-8 md:px-16">
+        
         <a href="/" class="text-lg font-semibold tracking-wide text-zinc-100 hover:text-white transition-colors">Melchisoft</a>
         
         <!-- Menú de PC -->
@@ -24,14 +26,15 @@ const rutaActual = Astro.url.pathname;
                 </a>
             </li>
         </ul>
-    </div>
 
-        <!-- Botón de 3 líneas para Celular -->
-        <button id="menu-btn" aria-label="Abrir menú" class="block md:hidden text-zinc-300 hover:text-white focus:outline-none">
+        <!-- Botón de 3 líneas para Celular (AHORA ESTÁ ADENTRO Y SIN "block") -->
+        <button id="menu-btn" aria-label="Abrir menú" class="md:hidden text-zinc-300 hover:text-white focus:outline-none">
             <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
         </button>
+
+    </div> <!-- AQUÍ CIERRA EL CONTENEDOR FLEX (Después del botón) -->
         
     <!-- Menú Desplegable de Celular -->
     <div id="mobile-menu" class="hidden md:hidden bg-zinc-950 border-t border-zinc-800/50">
