@@ -37,17 +37,17 @@ const rutaActual = Astro.url.pathname;
     <div id="mobile-menu" class="hidden md:hidden bg-zinc-950 border-t border-zinc-800/50">
         <ul class="flex flex-col items-center py-6 gap-6 text-sm">
             <li>
-                <a href="/servicios" class={`block transition-colors ${rutaActual === '/servicios' ? 'text-zinc-100 font-medium' : 'text-zinc-400 hover:text-zinc-100'}`}>
+                <a href="/servicios" class={`block transition-colors ${rutaActual.startsWith('/servicios') ? 'text-zinc-100 font-medium' : 'text-zinc-400 hover:text-zinc-100'}`}>
                     Servicios
                 </a>
             </li>
             <li>
-                <a href="/proyectos" class={`block transition-colors ${rutaActual === '/proyectos' ? 'text-zinc-100 font-medium' : 'text-zinc-400 hover:text-zinc-100'}`}>
+                <a href="/proyectos" class={`block transition-colors ${rutaActual.startsWith('/proyectos') ? 'text-zinc-100 font-medium' : 'text-zinc-400 hover:text-zinc-100'}`}>
                     Proyectos
                 </a>
             </li>
             <li>
-                <a href="/contacto" class={`block transition-colors ${rutaActual === '/contacto' ? 'text-zinc-100 font-medium' : 'text-zinc-400 hover:text-zinc-100'}`}>
+                <a href="/contacto" class={`block transition-colors ${rutaActual.startsWith('/contacto') ? 'text-zinc-100 font-medium' : 'text-zinc-400 hover:text-zinc-100'}`}>
                     Contacto
                 </a>
             </li>
