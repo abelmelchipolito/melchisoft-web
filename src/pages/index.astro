@@ -258,7 +258,7 @@ import Nav from '../components/Nav.astro';
         </div>
     </section>
 
-    <!-- SECCIÓN DE PREGUNTAS FRECUENTES (FAQ) -->
+    <!-- SECCIÓN DE PREGUNTAS FRECUENTES (FAQ) ANIMADA -->
     <section class="px-8 md:px-16 py-32 border-t border-zinc-800/50 bg-zinc-950">
         <div class="max-w-4xl mx-auto">
             
@@ -275,60 +275,113 @@ import Nav from '../components/Nav.astro';
             <div class="space-y-4">
                 
                 <!-- Pregunta 1 -->
-                <details class="group border border-zinc-800/80 bg-zinc-900/20 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden hover:border-zinc-700 transition-colors">
-                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-zinc-100 text-lg">
+                <div class="faq-item border border-zinc-800/80 bg-zinc-900/20 rounded-2xl overflow-hidden hover:border-zinc-700 transition-colors">
+                    <button class="faq-button w-full flex justify-between items-center p-6 font-medium text-left text-zinc-100 text-lg focus:outline-none">
                         <span>¿Tengo que pagar mensualidades por mi página web?</span>
-                        <span class="transition-transform duration-300 group-open:rotate-180 text-emerald-500">
+                        <span class="faq-icon transition-transform duration-500 text-emerald-500">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </span>
-                    </summary>
-                    <p class="text-zinc-400 mt-4 font-light leading-relaxed text-sm md:text-base border-t border-zinc-800/50 pt-4">
-                        <strong class="text-zinc-300 font-medium">No cobramos mensualidades por el diseño.</strong> El pago de tu paquete web es único. Sin embargo, para que tu página viva en internet requiere de un <span class="text-emerald-400">Dominio</span> (tu nombre .com) y un <span class="text-emerald-400">Hosting</span> (el servidor). Nosotros incluimos el primer año de alojamiento, después solo tendrás que cubrir la renovación anual del servidor, que suele ser muy accesible.
-                    </p>
-                </details>
+                    </button>
+                    <!-- El truco del Grid: grid-rows-[0fr] mantiene la altura en cero, grid-rows-[1fr] lo expande suavemente -->
+                    <div class="faq-answer grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out">
+                        <div class="overflow-hidden">
+                            <p class="text-zinc-400 font-light leading-relaxed text-sm md:text-base border-t border-zinc-800/50 p-6 pt-4 mt-0">
+                                <strong class="text-zinc-300 font-medium">No cobramos mensualidades por el diseño.</strong> El pago de tu paquete web es único. Sin embargo, para que tu página viva en internet requiere de un <span class="text-emerald-400">Dominio</span> (tu nombre .com) y un <span class="text-emerald-400">Hosting</span> (el servidor). Nosotros incluimos el primer año de alojamiento, después solo tendrás que cubrir la renovación anual del servidor, que suele ser muy accesible.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- Pregunta 2 -->
-                <details class="group border border-zinc-800/80 bg-zinc-900/20 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden hover:border-zinc-700 transition-colors">
-                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-zinc-100 text-lg">
+                <div class="faq-item border border-zinc-800/80 bg-zinc-900/20 rounded-2xl overflow-hidden hover:border-zinc-700 transition-colors">
+                    <button class="faq-button w-full flex justify-between items-center p-6 font-medium text-left text-zinc-100 text-lg focus:outline-none">
                         <span>¿Qué información necesito entregarles para empezar?</span>
-                        <span class="transition-transform duration-300 group-open:rotate-180 text-emerald-500">
+                        <span class="faq-icon transition-transform duration-500 text-emerald-500">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </span>
-                    </summary>
-                    <p class="text-zinc-400 mt-4 font-light leading-relaxed text-sm md:text-base border-t border-zinc-800/50 pt-4">
-                        Para iniciar tu proyecto únicamente necesitamos que nos platiques sobre tu negocio. Te pediremos tu <strong>logotipo</strong> (si lo tienes), fotografías de tus productos/servicios y los textos básicos (nosotros te ayudamos a redactarlos para que sean atractivos para vender).
-                    </p>
-                </details>
+                    </button>
+                    <div class="faq-answer grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out">
+                        <div class="overflow-hidden">
+                            <p class="text-zinc-400 font-light leading-relaxed text-sm md:text-base border-t border-zinc-800/50 p-6 pt-4 mt-0">
+                                Para iniciar tu proyecto únicamente necesitamos que nos platiques sobre tu negocio. Te pediremos tu <strong>logotipo</strong> (si lo tienes), fotografías de tus productos/servicios y los textos básicos (nosotros te ayudamos a redactarlos para que sean atractivos para vender).
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- Pregunta 3 -->
-                <details class="group border border-zinc-800/80 bg-zinc-900/20 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden hover:border-zinc-700 transition-colors">
-                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-zinc-100 text-lg">
+                <div class="faq-item border border-zinc-800/80 bg-zinc-900/20 rounded-2xl overflow-hidden hover:border-zinc-700 transition-colors">
+                    <button class="faq-button w-full flex justify-between items-center p-6 font-medium text-left text-zinc-100 text-lg focus:outline-none">
                         <span>¿Mi página aparecerá en Google?</span>
-                        <span class="transition-transform duration-300 group-open:rotate-180 text-emerald-500">
+                        <span class="faq-icon transition-transform duration-500 text-emerald-500">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </span>
-                    </summary>
-                    <p class="text-zinc-400 mt-4 font-light leading-relaxed text-sm md:text-base border-t border-zinc-800/50 pt-4">
-                        ¡Sí! Desarrollamos todas nuestras páginas con <strong>Astro</strong>, una tecnología moderna que garantiza velocidades de carga extremas. Google ama las páginas rápidas, por lo que aplicamos buenas prácticas de SEO técnico desde el código base para que los buscadores puedan leer e indexar tu sitio correctamente.
-                    </p>
-                </details>
+                    </button>
+                    <div class="faq-answer grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out">
+                        <div class="overflow-hidden">
+                            <p class="text-zinc-400 font-light leading-relaxed text-sm md:text-base border-t border-zinc-800/50 p-6 pt-4 mt-0">
+                                ¡Sí! Desarrollamos todas nuestras páginas con <strong>Astro</strong>, una tecnología moderna que garantiza velocidades de carga extremas. Google ama las páginas rápidas, por lo que aplicamos buenas prácticas de SEO técnico desde el código base para que los buscadores puedan leer e indexar tu sitio correctamente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- Pregunta 4 -->
-                <details class="group border border-zinc-800/80 bg-zinc-900/20 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden hover:border-zinc-700 transition-colors">
-                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-zinc-100 text-lg">
+                <div class="faq-item border border-zinc-800/80 bg-zinc-900/20 rounded-2xl overflow-hidden hover:border-zinc-700 transition-colors">
+                    <button class="faq-button w-full flex justify-between items-center p-6 font-medium text-left text-zinc-100 text-lg focus:outline-none">
                         <span>¿Qué pasa si ya tengo un dominio comprado?</span>
-                        <span class="transition-transform duration-300 group-open:rotate-180 text-emerald-500">
+                        <span class="faq-icon transition-transform duration-500 text-emerald-500">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </span>
-                    </summary>
-                    <p class="text-zinc-400 mt-4 font-light leading-relaxed text-sm md:text-base border-t border-zinc-800/50 pt-4">
-                        No hay ningún problema. Si ya compraste tu dominio (por ejemplo, en Hostinger, GoDaddy o Namecheap), nosotros nos encargamos de configurarlo y enlazarlo a tu nueva página web sin costo extra. Tú mantienes el control total de tu propiedad digital en todo momento.
-                    </p>
-                </details>
+                    </button>
+                    <div class="faq-answer grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out">
+                        <div class="overflow-hidden">
+                            <p class="text-zinc-400 font-light leading-relaxed text-sm md:text-base border-t border-zinc-800/50 p-6 pt-4 mt-0">
+                                No hay ningún problema. Si ya compraste tu dominio (por ejemplo, en Hostinger, GoDaddy o Namecheap), nosotros nos encargamos de configurarlo y enlazarlo a tu nueva página web sin costo extra. Tú mantienes el control total de tu propiedad digital en todo momento.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
     </section>
+
+    <!-- Script para darle vida a la animación -->
+    <script>
+        // Esperamos a que el DOM esté listo
+        document.addEventListener('DOMContentLoaded', () => {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const button = item.querySelector('.faq-button');
+                const answer = item.querySelector('.faq-answer');
+                const icon = item.querySelector('.faq-icon');
+
+                button.addEventListener('click', () => {
+                    const isOpen = answer.classList.contains('grid-rows-[1fr]');
+
+                    // 1. Cerramos todas las respuestas primero (Efecto Acordeón)
+                    document.querySelectorAll('.faq-answer').forEach(a => {
+                        a.classList.remove('grid-rows-[1fr]');
+                        a.classList.add('grid-rows-[0fr]');
+                    });
+                    
+                    // Rotamos todas las flechas a su estado original
+                    document.querySelectorAll('.faq-icon').forEach(i => {
+                        i.classList.remove('rotate-180');
+                    });
+
+                    // 2. Si la que clickeamos estaba cerrada, la abrimos
+                    if (!isOpen) {
+                        answer.classList.remove('grid-rows-[0fr]');
+                        answer.classList.add('grid-rows-[1fr]');
+                        icon.classList.add('rotate-180');
+                    }
+                });
+            });
+        });
+    </script>
 
     <!-- SECCIÓN 2: CTA FINAL -->
     <section class="px-8 md:px-16 py-32 border-t border-zinc-800/50 relative overflow-hidden">
