@@ -23,22 +23,30 @@ import Nav from '../components/Nav.astro';
                 </p>
             </div>
 
-            <!-- Contenedor de Paquetes -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+            <!-- CONTENEDOR DE PAQUETES CON PRECIOS -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start mb-32">
                 
-                <!-- PAQUETE 1: LANDING PAGE (El Destacado) -->
-                <div class="relative p-8 md:p-12 rounded-[2.5rem] bg-zinc-900/40 backdrop-blur-xl border border-emerald-500/30 shadow-2xl shadow-emerald-500/10 flex flex-col h-full">
+                <!-- PAQUETE 1: LANDING PAGE -->
+                <div class="relative p-8 md:p-12 rounded-[2.5rem] bg-zinc-900/40 backdrop-blur-xl border border-emerald-500/30 shadow-2xl shadow-emerald-500/10 flex flex-col h-full hover:-translate-y-1 transition-transform duration-500">
                     
-                    <!-- Etiqueta superior -->
                     <div class="absolute -top-4 left-1/2 -translate-x-1/2 inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500 text-zinc-950 text-xs font-bold uppercase tracking-widest shadow-lg shadow-emerald-500/20">
                         Más solicitado
                     </div>
 
-                    <div class="mb-8">
+                    <div class="mb-6">
                         <h2 class="text-3xl font-medium text-zinc-100 mb-4">Landing Page Express</h2>
                         <p class="text-zinc-400 font-light leading-relaxed">
-                            Perfecto para negocios locales, consultorios o campañas de publicidad. Una sola página enfocada 100% en captar clientes hacia tu WhatsApp.
+                            Perfecto para negocios locales o campañas de publicidad. Una página enfocada 100% en captar clientes hacia tu WhatsApp.
                         </p>
+                    </div>
+
+                    <!-- PRECIO -->
+                    <div class="mb-8 pb-8 border-b border-zinc-800/80">
+                        <span class="text-zinc-400 text-sm block mb-1">Inversión desde</span>
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-4xl md:text-5xl font-bold text-zinc-100">$3,500</span>
+                            <span class="text-zinc-500 font-medium">MXN</span>
+                        </div>
                     </div>
 
                     <!-- Tiempo de entrega estimado -->
@@ -48,44 +56,36 @@ import Nav from '../components/Nav.astro';
                     </div>
 
                     <div class="flex-grow">
-                        <h3 class="text-sm font-medium text-zinc-100 mb-4 uppercase tracking-widest">¿Qué incluye?</h3>
                         <ul class="space-y-4 text-zinc-300 font-light text-sm">
-                            <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span>Diseño premium y personalizado de 1 sola página (One-Page).</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span>Botón flotante e integración directa con WhatsApp.</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span>Adaptación perfecta para dispositivos móviles (Responsive).</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span>Configuración de enlaces a tus redes sociales.</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span>Alojamiento (Hosting) de alta velocidad incluido.</span>
-                            </li>
+                            <li class="flex items-start gap-3"><svg class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Diseño premium de 1 sola página.</span></li>
+                            <li class="flex items-start gap-3"><svg class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Botón flotante hacia WhatsApp.</span></li>
+                            <li class="flex items-start gap-3"><svg class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Adaptación perfecta para móviles (Responsive).</span></li>
+                            <li class="flex items-start gap-3"><svg class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Alojamiento de alta velocidad incluido el primer año.</span></li>
                         </ul>
                     </div>
 
-                    <a href="/contacto" class="mt-10 block w-full bg-zinc-100 text-zinc-950 hover:bg-white text-center py-4 rounded-xl text-sm font-semibold transition-all hover:-translate-y-1 shadow-lg shadow-white/10">
+                    <a href="/contacto" class="mt-10 block w-full bg-zinc-100 text-zinc-950 hover:bg-emerald-400 text-center py-4 rounded-xl text-sm font-semibold transition-all shadow-[0_0_0_rgba(52,211,153,0)] hover:shadow-[0_0_20px_rgba(52,211,153,0.4)]">
                         Cotizar Landing Page
                     </a>
                 </div>
 
                 <!-- PAQUETE 2: SITIO CORPORATIVO -->
-                <div class="p-8 md:p-12 rounded-[2.5rem] bg-zinc-900/20 border border-zinc-800/80 flex flex-col h-full hover:border-zinc-700/80 transition-colors">
+                <div class="p-8 md:p-12 rounded-[2.5rem] bg-zinc-900/20 border border-zinc-800/80 flex flex-col h-full hover:border-zinc-700/80 transition-all duration-500">
                     
-                    <div class="mb-8 mt-2">
+                    <div class="mb-6 mt-2">
                         <h2 class="text-3xl font-medium text-zinc-100 mb-4">Web Corporativa</h2>
                         <p class="text-zinc-400 font-light leading-relaxed">
-                            El ecosistema ideal para clínicas, agencias o despachos que buscan consolidar su marca, mostrar su portafolio y transmitir máxima autoridad.
+                            El ecosistema ideal para empresas que buscan consolidar su marca, mostrar su portafolio y transmitir máxima autoridad.
                         </p>
+                    </div>
+
+                    <!-- PRECIO -->
+                    <div class="mb-8 pb-8 border-b border-zinc-800/80">
+                        <span class="text-zinc-400 text-sm block mb-1">Inversión desde</span>
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-4xl md:text-5xl font-bold text-zinc-100">$8,500</span>
+                            <span class="text-zinc-500 font-medium">MXN</span>
+                        </div>
                     </div>
 
                     <!-- Tiempo de entrega estimado -->
@@ -95,28 +95,11 @@ import Nav from '../components/Nav.astro';
                     </div>
 
                     <div class="flex-grow">
-                        <h3 class="text-sm font-medium text-zinc-100 mb-4 uppercase tracking-widest">¿Qué incluye?</h3>
                         <ul class="space-y-4 text-zinc-400 font-light text-sm">
-                            <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-zinc-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span>Hasta 5 páginas internas (Inicio, Servicios, Nosotros, Portafolio, Contacto).</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-zinc-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span>Arquitectura SEO para un mejor posicionamiento en Google.</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-zinc-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span>Galería de proyectos o menú de productos.</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-zinc-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span>Optimización avanzada de imágenes y código.</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <svg class="w-5 h-5 text-zinc-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                <span>Alojamiento (Hosting) de alta velocidad incluido.</span>
-                            </li>
+                            <li class="flex items-start gap-3"><svg class="w-5 h-5 text-zinc-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Hasta 5 páginas internas (Inicio, Servicios, Nosotros, etc).</span></li>
+                            <li class="flex items-start gap-3"><svg class="w-5 h-5 text-zinc-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Arquitectura SEO para posicionamiento en Google.</span></li>
+                            <li class="flex items-start gap-3"><svg class="w-5 h-5 text-zinc-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Galería de proyectos o menú de productos.</span></li>
+                            <li class="flex items-start gap-3"><svg class="w-5 h-5 text-zinc-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Alojamiento de alta velocidad incluido el primer año.</span></li>
                         </ul>
                     </div>
 
@@ -124,16 +107,64 @@ import Nav from '../components/Nav.astro';
                         Cotizar Web Corporativa
                     </a>
                 </div>
-
             </div>
 
-            <!-- Banner de dudas extra / Proyectos a medida -->
-            <div class="mt-20 p-8 rounded-3xl border border-zinc-800/50 bg-zinc-900/30 text-center max-w-3xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <!-- NUEVA SECCIÓN: NUESTRO PROCESO -->
+            <div class="mb-32">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-medium text-zinc-100 mb-4">¿Cómo trabajamos?</h2>
+                    <p class="text-zinc-400 font-light max-w-xl mx-auto">Un proceso claro, sin tecnicismos ni complicaciones. Así llevamos tu idea a la realidad.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                    <!-- Línea decorativa que conecta los pasos (solo en PC) -->
+                    <div class="hidden md:block absolute top-6 left-[10%] right-[10%] h-px bg-zinc-800/80 z-0"></div>
+
+                    <!-- Paso 1 -->
+                    <div class="relative z-10 text-center group">
+                        <div class="w-12 h-12 mx-auto bg-zinc-950 border border-zinc-800 text-zinc-400 group-hover:border-emerald-500/50 group-hover:text-emerald-400 rounded-full flex items-center justify-center font-bold text-lg mb-6 transition-colors shadow-lg">
+                            1
+                        </div>
+                        <h3 class="text-lg font-medium text-zinc-100 mb-2">Descubrimiento</h3>
+                        <p class="text-zinc-500 text-sm font-light leading-relaxed">Me cuentas sobre tu negocio por WhatsApp y definimos juntos lo que realmente necesitas.</p>
+                    </div>
+
+                    <!-- Paso 2 -->
+                    <div class="relative z-10 text-center group">
+                        <div class="w-12 h-12 mx-auto bg-zinc-950 border border-zinc-800 text-zinc-400 group-hover:border-emerald-500/50 group-hover:text-emerald-400 rounded-full flex items-center justify-center font-bold text-lg mb-6 transition-colors shadow-lg">
+                            2
+                        </div>
+                        <h3 class="text-lg font-medium text-zinc-100 mb-2">Diseño y Código</h3>
+                        <p class="text-zinc-500 text-sm font-light leading-relaxed">Manos a la obra. Construimos tu sitio a la medida enfocándonos en la velocidad y el diseño visual.</p>
+                    </div>
+
+                    <!-- Paso 3 -->
+                    <div class="relative z-10 text-center group">
+                        <div class="w-12 h-12 mx-auto bg-zinc-950 border border-zinc-800 text-zinc-400 group-hover:border-emerald-500/50 group-hover:text-emerald-400 rounded-full flex items-center justify-center font-bold text-lg mb-6 transition-colors shadow-lg">
+                            3
+                        </div>
+                        <h3 class="text-lg font-medium text-zinc-100 mb-2">Revisión</h3>
+                        <p class="text-zinc-500 text-sm font-light leading-relaxed">Te enviamos un enlace privado para que veas tu web, navegues por ella y hagamos los ajustes finales.</p>
+                    </div>
+
+                    <!-- Paso 4 -->
+                    <div class="relative z-10 text-center group">
+                        <div class="w-12 h-12 mx-auto bg-zinc-950 border border-zinc-800 text-zinc-400 group-hover:border-emerald-500/50 group-hover:text-emerald-400 rounded-full flex items-center justify-center font-bold text-lg mb-6 transition-colors shadow-lg">
+                            4
+                        </div>
+                        <h3 class="text-lg font-medium text-zinc-100 mb-2">Lanzamiento</h3>
+                        <p class="text-zinc-500 text-sm font-light leading-relaxed">Conectamos tu dominio, activamos la seguridad SSL y tu web queda lista para recibir clientes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner de dudas extra -->
+            <div class="p-8 rounded-3xl border border-zinc-800/50 bg-zinc-900/30 text-center max-w-3xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
                 <div class="text-left">
                     <h3 class="text-xl font-medium text-zinc-100 mb-2">¿Necesitas algo diferente?</h3>
-                    <p class="text-zinc-400 text-sm font-light">Blogs, catálogos o mantenimiento mensual de tu sitio web actual.</p>
+                    <p class="text-zinc-400 text-sm font-light">Sistemas a la medida, tiendas online o mantenimiento mensual.</p>
                 </div>
-                <a href="/contacto" class="shrink-0 text-emerald-400 hover:text-emerald-300 text-sm font-medium flex items-center gap-2 transition-colors">
+                <a href="/contacto" class="shrink-0 bg-zinc-800/50 hover:bg-zinc-800 px-6 py-3 rounded-full text-zinc-300 hover:text-white text-sm font-medium flex items-center gap-2 transition-colors">
                     Cuéntanos tu idea
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                 </a>
