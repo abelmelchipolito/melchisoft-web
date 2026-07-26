@@ -9,21 +9,22 @@ const rutaActual = Astro.url.pathname;
         <!-- Menú de PC -->
         <ul class="hidden md:flex gap-10 items-center text-sm">
             <li>
-                <a href="/servicios" class={`transition-colors ${rutaActual === '/servicios' ? 'text-zinc-100 font-medium' : 'text-zinc-400 hover:text-zinc-100'}`}>
+                <a href="/servicios" class={`transition-colors ${rutaActual.startsWith('/servicios') ? 'text-zinc-100 font-medium' : 'text-zinc-400 hover:text-zinc-100'}`}>
                     Servicios
                 </a>
             </li>
             <li>
-                <a href="/proyectos" class={`transition-colors ${rutaActual === '/proyectos' ? 'text-zinc-100 font-medium' : 'text-zinc-400 hover:text-zinc-100'}`}>
+                <a href="/proyectos" class={`transition-colors ${rutaActual.startsWith('/proyectos') ? 'text-zinc-100 font-medium' : 'text-zinc-400 hover:text-zinc-100'}`}>
                     Proyectos
                 </a>
             </li>
             <li>
-                <a href="/contacto" class={`transition-colors ${rutaActual === '/contacto' ? 'text-zinc-100 font-medium' : 'text-zinc-400 hover:text-zinc-100'}`}>
+                <a href="/contacto" class={`transition-colors ${rutaActual.startsWith('/contacto') ? 'text-zinc-100 font-medium' : 'text-zinc-400 hover:text-zinc-100'}`}>
                     Contacto
                 </a>
             </li>
         </ul>
+    </div>
 
         <!-- Botón de 3 líneas para Celular -->
         <button id="menu-btn" aria-label="Abrir menú" class="block md:hidden text-zinc-300 hover:text-white focus:outline-none">
