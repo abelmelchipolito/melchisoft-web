@@ -22,12 +22,12 @@ const pathname = Astro.url.pathname;
                 Servicios
             </a>
             <a href="/nosotros" class={`text-sm font-medium transition-colors ${pathname.includes('/nosotros') ? 'text-emerald-400' : 'text-zinc-400 hover:text-zinc-100'}`}>
-                Nuestra Filosofía
+                Sobre Nosotros
             </a>
             
             <!-- Botón de Contacto Destacado -->
-            <a href="/contacto" class="bg-zinc-100 text-zinc-950 hover:bg-emerald-400 px-6 py-2.5 rounded-full text-sm font-semibold transition-all shadow-[0_0_0_rgba(52,211,153,0)] hover:shadow-[0_0_15px_rgba(52,211,153,0.3)]">
-                Hablemos
+            <a href="/contacto" class={`text-sm font-medium transition-colors ${pathname.includes('/contacto') ? 'text-emerald-400' : 'text-zinc-400 hover:text-zinc-100'}`}>
+                Contacto
             </a>
         </nav>
 
@@ -43,13 +43,13 @@ const pathname = Astro.url.pathname;
     <div id="mobile-menu" class="hidden md:hidden bg-zinc-950 border-b border-zinc-800/50 absolute w-full shadow-2xl">
         <div class="px-8 py-6 flex flex-col gap-6">
             <a href="/servicios" class={`text-lg font-medium transition-colors ${pathname.includes('/servicios') ? 'text-emerald-400' : 'text-zinc-400 hover:text-zinc-100'}`}>
-                Servicios y Precios
+                Servicios
             </a>
             <a href="/nosotros" class={`text-lg font-medium transition-colors ${pathname.includes('/nosotros') ? 'text-emerald-400' : 'text-zinc-400 hover:text-zinc-100'}`}>
-                Nuestra Filosofía
+                Sobre Nosotros
             </a>
-            <a href="/contacto" class="mt-2 w-full bg-emerald-500 hover:bg-emerald-400 text-zinc-950 py-4 rounded-xl text-center font-bold transition-colors">
-                Iniciar Proyecto
+            <a href="/contacto" class={`text-lg font-medium transition-colors ${pathname.includes('/contacto') ? 'text-emerald-400' : 'text-zinc-400 hover:text-zinc-100'}`}>
+                Contacto
             </a>
         </div>
     </div>
