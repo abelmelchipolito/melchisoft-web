@@ -207,6 +207,129 @@ import Nav from '../components/Nav.astro';
         </div>
     </section>
 
+    <!-- SECCIÓN DE CONCIENTIZACIÓN (¿Por qué necesitas una web?) -->
+    <section class="px-8 md:px-16 py-24 border-t border-zinc-800/50 bg-zinc-950/20 relative">
+        <!-- Detalle de luz tenue -->
+        <div class="absolute left-0 top-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-emerald-500/5 blur-[100px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                
+                <!-- Columna Izquierda: El problema -->
+                <div class="relative z-10">
+                    <h2 class="text-3xl md:text-5xl font-medium text-zinc-100 mb-6 tracking-tight leading-[1.1]">
+                        Tener solo redes sociales <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-emerald-600">ya no es suficiente.</span>
+                    </h2>
+                    <p class="text-zinc-400 text-lg leading-relaxed font-light mb-8">
+                        Tus clientes potenciales buscan en Google antes de tomar una decisión de compra. Un sitio web profesional es la diferencia entre ser una opción más o posicionarte como la máxima autoridad de tu sector.
+                    </p>
+                    <div class="flex items-center gap-4 text-zinc-300 text-sm font-medium bg-zinc-900/50 border border-zinc-800 w-fit px-5 py-3 rounded-full">
+                        <span class="flex items-center justify-center w-6 h-6 rounded-full bg-emerald-500/20">
+                            <svg class="w-3.5 h-3.5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                        </span>
+                        Tú tienes el control total, no dependes de algoritmos.
+                    </div>
+                </div>
+                
+                <!-- Columna Derecha: Los Datos (Tarjetas) -->
+                <div class="grid grid-cols-1 gap-6 relative z-10">
+                    <!-- Dato 1 -->
+                    <div class="p-8 rounded-3xl bg-zinc-900/60 border border-zinc-800/80 hover:border-zinc-700 transition-colors backdrop-blur-sm">
+                        <h4 class="text-emerald-400 font-bold text-3xl mb-3 flex items-center gap-3">
+                            24/7
+                            <span class="block w-full h-px bg-zinc-800/80"></span>
+                        </h4>
+                        <h5 class="text-zinc-100 font-medium mb-2">Ventas sin interrupción</h5>
+                        <p class="text-zinc-400 text-sm leading-relaxed font-light">Tu negocio se mantiene abierto todo el tiempo. Resuelve dudas frecuentes, muestra tus servicios y recibe mensajes de prospectos incluso mientras duermes.</p>
+                    </div>
+                    
+                    <!-- Dato 2 (Ligeramente desplazado para darle un toque moderno) -->
+                    <div class="p-8 rounded-3xl bg-zinc-900/60 border border-zinc-800/80 hover:border-zinc-700 transition-colors backdrop-blur-sm lg:ml-12">
+                        <h4 class="text-emerald-400 font-bold text-3xl mb-3 flex items-center gap-3">
+                            +75%
+                            <span class="block w-full h-px bg-zinc-800/80"></span>
+                        </h4>
+                        <h5 class="text-zinc-100 font-medium mb-2">Confianza inmediata</h5>
+                        <p class="text-zinc-400 text-sm leading-relaxed font-light">De los usuarios juzgan la credibilidad de una empresa basándose únicamente en la calidad visual y la velocidad de su sitio web.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE PREGUNTAS FRECUENTES (FAQ) -->
+    <section class="px-8 md:px-16 py-32 border-t border-zinc-800/50 bg-zinc-950">
+        <div class="max-w-4xl mx-auto">
+            
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-medium text-zinc-100 mb-6 tracking-tight">
+                    Preguntas <span class="text-zinc-500">Frecuentes</span>
+                </h2>
+                <p class="text-zinc-400 text-lg font-light">
+                    Resolvemos tus dudas principales para que des el paso con total seguridad.
+                </p>
+            </div>
+
+            <!-- Contenedor del Acordeón -->
+            <div class="space-y-4">
+                
+                <!-- Pregunta 1 -->
+                <details class="group border border-zinc-800/80 bg-zinc-900/20 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden hover:border-zinc-700 transition-colors">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-zinc-100 text-lg">
+                        <span>¿Tengo que pagar mensualidades por mi página web?</span>
+                        <span class="transition-transform duration-300 group-open:rotate-180 text-emerald-500">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </span>
+                    </summary>
+                    <p class="text-zinc-400 mt-4 font-light leading-relaxed text-sm md:text-base border-t border-zinc-800/50 pt-4">
+                        <strong class="text-zinc-300 font-medium">No cobramos mensualidades por el diseño.</strong> El pago de tu paquete web es único. Sin embargo, para que tu página viva en internet requiere de un <span class="text-emerald-400">Dominio</span> (tu nombre .com) y un <span class="text-emerald-400">Hosting</span> (el servidor). Nosotros incluimos el primer año de alojamiento, después solo tendrás que cubrir la renovación anual del servidor, que suele ser muy accesible.
+                    </p>
+                </details>
+
+                <!-- Pregunta 2 -->
+                <details class="group border border-zinc-800/80 bg-zinc-900/20 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden hover:border-zinc-700 transition-colors">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-zinc-100 text-lg">
+                        <span>¿Qué información necesito entregarles para empezar?</span>
+                        <span class="transition-transform duration-300 group-open:rotate-180 text-emerald-500">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </span>
+                    </summary>
+                    <p class="text-zinc-400 mt-4 font-light leading-relaxed text-sm md:text-base border-t border-zinc-800/50 pt-4">
+                        Para iniciar tu proyecto únicamente necesitamos que nos platiques sobre tu negocio. Te pediremos tu <strong>logotipo</strong> (si lo tienes), fotografías de tus productos/servicios y los textos básicos (nosotros te ayudamos a redactarlos para que sean atractivos para vender).
+                    </p>
+                </details>
+
+                <!-- Pregunta 3 -->
+                <details class="group border border-zinc-800/80 bg-zinc-900/20 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden hover:border-zinc-700 transition-colors">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-zinc-100 text-lg">
+                        <span>¿Mi página aparecerá en Google?</span>
+                        <span class="transition-transform duration-300 group-open:rotate-180 text-emerald-500">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </span>
+                    </summary>
+                    <p class="text-zinc-400 mt-4 font-light leading-relaxed text-sm md:text-base border-t border-zinc-800/50 pt-4">
+                        ¡Sí! Desarrollamos todas nuestras páginas con <strong>Astro</strong>, una tecnología moderna que garantiza velocidades de carga extremas. Google ama las páginas rápidas, por lo que aplicamos buenas prácticas de SEO técnico desde el código base para que los buscadores puedan leer e indexar tu sitio correctamente.
+                    </p>
+                </details>
+
+                <!-- Pregunta 4 -->
+                <details class="group border border-zinc-800/80 bg-zinc-900/20 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden hover:border-zinc-700 transition-colors">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-zinc-100 text-lg">
+                        <span>¿Qué pasa si ya tengo un dominio comprado?</span>
+                        <span class="transition-transform duration-300 group-open:rotate-180 text-emerald-500">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </span>
+                    </summary>
+                    <p class="text-zinc-400 mt-4 font-light leading-relaxed text-sm md:text-base border-t border-zinc-800/50 pt-4">
+                        No hay ningún problema. Si ya compraste tu dominio (por ejemplo, en Hostinger, GoDaddy o Namecheap), nosotros nos encargamos de configurarlo y enlazarlo a tu nueva página web sin costo extra. Tú mantienes el control total de tu propiedad digital en todo momento.
+                    </p>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
     <!-- SECCIÓN 2: CTA FINAL -->
     <section class="px-8 md:px-16 py-32 border-t border-zinc-800/50 relative overflow-hidden">
         <!-- Efecto de brillo de fondo suave -->
