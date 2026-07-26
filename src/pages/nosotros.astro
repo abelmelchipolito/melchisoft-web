@@ -1,0 +1,86 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+---
+
+<Layout>
+    <Nav />
+    
+    <main class="min-h-screen pt-32 pb-24 px-8 md:px-16 relative overflow-hidden">
+        
+        <!-- Efecto de iluminación de fondo -->
+        <div class="absolute top-20 right-0 w-[500px] h-[500px] bg-emerald-500/5 blur-[120px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto relative z-10">
+            
+            <!-- Encabezado -->
+            <div class="mb-20">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-400 text-xs font-medium mb-6 uppercase tracking-widest">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                    Nuestra Filosofía
+                </div>
+                <h1 class="text-4xl md:text-6xl font-medium text-zinc-100 mb-8 tracking-tight leading-[1.1]">
+                    Hacemos web de verdad, <br>
+                    <span class="text-zinc-500">sin plantillas ni excusas.</span>
+                </h1>
+                <p class="text-zinc-400 text-lg md:text-xl font-light leading-relaxed max-w-2xl">
+                    Melchisoft nació con una idea muy clara: rescatar a los negocios locales de las páginas lentas y genéricas que no consiguen clientes. Creemos que tu presencia digital debe ser tu mejor vendedor.
+                </p>
+            </div>
+
+            <!-- Los 3 Pilares -->
+            <div class="space-y-12 mb-20">
+                
+                <div class="flex flex-col md:flex-row gap-6 md:gap-12 items-start group">
+                    <div class="shrink-0 w-16 h-16 rounded-2xl bg-zinc-900/50 border border-zinc-800 flex items-center justify-center text-emerald-400 group-hover:bg-zinc-900 group-hover:border-emerald-500/50 transition-all">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-medium text-zinc-100 mb-3">Código a la medida</h3>
+                        <p class="text-zinc-400 font-light leading-relaxed">
+                            No usamos WordPress ni constructores pesados. Desarrollamos tu sitio escribiendo código moderno (Astro y Tailwind) desde cero. El resultado es un sitio ligero, seguro y completamente tuyo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 md:gap-12 items-start group">
+                    <div class="shrink-0 w-16 h-16 rounded-2xl bg-zinc-900/50 border border-zinc-800 flex items-center justify-center text-emerald-400 group-hover:bg-zinc-900 group-hover:border-emerald-500/50 transition-all">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-medium text-zinc-100 mb-3">Velocidad obsesiva</h3>
+                        <p class="text-zinc-400 font-light leading-relaxed">
+                            Vivimos en la era de la inmediatez. Si tu página tarda más de 3 segundos en cargar, el cliente se va a la competencia. Nuestras páginas cargan al instante, mejorando tu posicionamiento en Google y tus ventas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 md:gap-12 items-start group">
+                    <div class="shrink-0 w-16 h-16 rounded-2xl bg-zinc-900/50 border border-zinc-800 flex items-center justify-center text-emerald-400 group-hover:bg-zinc-900 group-hover:border-emerald-500/50 transition-all">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-medium text-zinc-100 mb-3">Trato humano y directo</h3>
+                        <p class="text-zinc-400 font-light leading-relaxed">
+                            Odiamos los tecnicismos innecesarios. Hablamos tu mismo idioma y nos involucramos en tu proyecto como si fuera nuestro. Queremos que tu negocio crezca, porque si tú creces, nosotros también.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Banner final de confianza -->
+            <div class="p-8 md:p-12 rounded-3xl bg-zinc-900/40 border border-zinc-800/80 text-center">
+                <h3 class="text-xl font-medium text-zinc-100 mb-4">La tecnología detrás de nuestro trabajo</h3>
+                <p class="text-zinc-400 text-sm mb-8 font-light">Desarrollamos con las herramientas preferidas por las empresas líderes del sector tecnológico.</p>
+                <div class="flex flex-wrap justify-center gap-4 text-zinc-500 font-medium text-sm">
+                    <span class="px-4 py-2 rounded-full bg-zinc-950 border border-zinc-800/80">Astro</span>
+                    <span class="px-4 py-2 rounded-full bg-zinc-950 border border-zinc-800/80">Tailwind CSS</span>
+                    <span class="px-4 py-2 rounded-full bg-zinc-950 border border-zinc-800/80">JavaScript</span>
+                    <span class="px-4 py-2 rounded-full bg-zinc-950 border border-zinc-800/80">GitHub Pages</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</Layout>
