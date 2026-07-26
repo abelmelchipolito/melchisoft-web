@@ -81,6 +81,121 @@ import Nav from '../components/Nav.astro';
         </div>
     </header>
 
+    <!-- SECCIÓN DE CONCIENTIZACIÓN (¿Por qué necesitas una web?) -->
+    <section class="px-8 md:px-16 py-24 border-t border-zinc-800/50 bg-zinc-950/20 relative">
+        <!-- Detalle de luz tenue -->
+        <div class="absolute left-0 top-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-emerald-500/5 blur-[100px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                
+                <!-- Columna Izquierda: El problema -->
+                <div class="relative z-10">
+                    <h2 class="text-3xl md:text-5xl font-medium text-zinc-100 mb-6 tracking-tight leading-[1.1]">
+                        Tener solo redes sociales <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-emerald-600">ya no es suficiente.</span>
+                    </h2>
+                    <p class="text-zinc-400 text-lg leading-relaxed font-light mb-8">
+                        Tus clientes potenciales buscan en Google antes de tomar una decisión de compra. Un sitio web profesional es la diferencia entre ser una opción más o posicionarte como la máxima autoridad de tu sector.
+                    </p>
+                    <div class="flex items-center gap-4 text-zinc-300 text-sm font-medium bg-zinc-900/50 border border-zinc-800 w-fit px-5 py-3 rounded-full">
+                        <span class="flex items-center justify-center w-6 h-6 rounded-full bg-emerald-500/20">
+                            <svg class="w-3.5 h-3.5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                        </span>
+                        Tú tienes el control total, no dependes de algoritmos.
+                    </div>
+                </div>
+                
+                <!-- Columna Derecha: Los Datos (Tarjetas) -->
+                <div class="grid grid-cols-1 gap-6 relative z-10">
+                    <!-- Dato 1 -->
+                    <div class="p-8 rounded-3xl bg-zinc-900/60 border border-zinc-800/80 hover:border-zinc-700 transition-colors backdrop-blur-sm">
+                        <h4 class="text-emerald-400 font-bold text-3xl mb-3 flex items-center gap-3">
+                            24/7
+                            <span class="block w-full h-px bg-zinc-800/80"></span>
+                        </h4>
+                        <h5 class="text-zinc-100 font-medium mb-2">Ventas sin interrupción</h5>
+                        <p class="text-zinc-400 text-sm leading-relaxed font-light">Tu negocio se mantiene abierto todo el tiempo. Resuelve dudas frecuentes, muestra tus servicios y recibe mensajes de prospectos incluso mientras duermes.</p>
+                    </div>
+                    
+                    <!-- Dato 2 (Ligeramente desplazado para darle un toque moderno) -->
+                    <div class="p-8 rounded-3xl bg-zinc-900/60 border border-zinc-800/80 hover:border-zinc-700 transition-colors backdrop-blur-sm lg:ml-12">
+                        <h4 class="text-emerald-400 font-bold text-3xl mb-3 flex items-center gap-3">
+                            +75%
+                            <span class="block w-full h-px bg-zinc-800/80"></span>
+                        </h4>
+                        <h5 class="text-zinc-100 font-medium mb-2">Confianza inmediata</h5>
+                        <p class="text-zinc-400 text-sm leading-relaxed font-light">De los usuarios juzgan la credibilidad de una empresa basándose únicamente en la calidad visual y la velocidad de su sitio web.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: CASOS DE USO / ¿CUÁL ELEGIR? -->
+            <div class="mb-32">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-medium text-zinc-100 mb-4">¿Cuál es la ideal para tu negocio?</h2>
+                    <p class="text-zinc-400 font-light max-w-xl mx-auto">Te mostramos ejemplos del mundo real para que inviertas exactamente en lo que necesitas, ni más ni menos.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    
+                    <!-- Caso 1: Landing Page -->
+                    <div class="p-8 rounded-[2rem] bg-zinc-900/30 border border-zinc-800/80 hover:border-emerald-500/50 transition-all duration-300 group">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-medium mb-6 border border-emerald-500/20">
+                            Landing Page
+                        </div>
+                        <h3 class="text-xl font-medium text-zinc-100 mb-2">Acción Rápida y Local</h3>
+                        <p class="text-zinc-500 text-sm font-light mb-6 min-h-[40px]">
+                            <strong>Ejemplo:</strong> Tienes una barbería, una clínica dental o reparas equipos.
+                        </p>
+                        <div class="bg-zinc-950/50 rounded-2xl p-5 border border-zinc-800/50 group-hover:bg-zinc-900/50 transition-colors">
+                            <p class="text-zinc-300 text-sm font-light leading-relaxed">
+                                <span class="text-emerald-400 font-medium block mb-1">¿Por qué te conviene?</span> 
+                                Tu cliente tiene una necesidad urgente. No quiere leer menús extensos; quiere ver tu trabajo, tus horarios, dónde estás y agendar al instante. Una sola página diseñada estratégicamente para enviar ese cliente directo a tu <strong>WhatsApp</strong> es tu mejor herramienta de ventas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Caso 2: Web Corporativa -->
+                    <div class="p-8 rounded-[2rem] bg-zinc-900/30 border border-zinc-800/80 hover:border-zinc-500/50 transition-all duration-300 group">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-800 text-zinc-300 text-xs font-medium mb-6 border border-zinc-700">
+                            Web Corporativa
+                        </div>
+                        <h3 class="text-xl font-medium text-zinc-100 mb-2">Autoridad y Confianza</h3>
+                        <p class="text-zinc-500 text-sm font-light mb-6 min-h-[40px]">
+                            <strong>Ejemplo:</strong> Eres un despacho contable, firma de abogados o agencia.
+                        </p>
+                        <div class="bg-zinc-950/50 rounded-2xl p-5 border border-zinc-800/50 group-hover:bg-zinc-900/50 transition-colors">
+                            <p class="text-zinc-300 text-sm font-light leading-relaxed">
+                                <span class="text-zinc-100 font-medium block mb-1">¿Por qué te conviene?</span> 
+                                Vendes servicios de alto valor y necesitas generar confianza absoluta. Aquí sí necesitas varias páginas: una sección detallada de "Nosotros" para presentar a tu equipo, otra para explicar a fondo tus servicios y un formulario formal. Funciona como tu oficina digital 24/7.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Caso 3: Blog / Marca Personal -->
+                    <div class="p-8 rounded-[2rem] bg-zinc-900/30 border border-zinc-800/80 hover:border-zinc-500/50 transition-all duration-300 group">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-800 text-zinc-300 text-xs font-medium mb-6 border border-zinc-700">
+                            Blog / Marca Personal
+                        </div>
+                        <h3 class="text-xl font-medium text-zinc-100 mb-2">Creadores y Tráfico SEO</h3>
+                        <p class="text-zinc-500 text-sm font-light mb-6 min-h-[40px]">
+                            <strong>Ejemplo:</strong> Eres un experto en finanzas, nutricionista o creador de contenido.
+                        </p>
+                        <div class="bg-zinc-950/50 rounded-2xl p-5 border border-zinc-800/50 group-hover:bg-zinc-900/50 transition-colors">
+                            <p class="text-zinc-300 text-sm font-light leading-relaxed">
+                                <span class="text-zinc-100 font-medium block mb-1">¿Por qué te conviene?</span> 
+                                Tu modelo de negocio depende de demostrar tu conocimiento publicando artículos constantemente. Este sistema está optimizado para que Google lea tus textos y te envíe visitantes orgánicos que consuman tu contenido y conecten con tu marca a largo plazo.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
     <!-- SECCIÓN 1: BENEFICIOS -->
     <section class="px-8 md:px-16 py-24 border-t border-zinc-800/50 bg-zinc-950/50">
         <div class="max-w-6xl mx-auto">
@@ -203,57 +318,6 @@ import Nav from '../components/Nav.astro';
                     </a>
                 </div>
                 
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCIÓN DE CONCIENTIZACIÓN (¿Por qué necesitas una web?) -->
-    <section class="px-8 md:px-16 py-24 border-t border-zinc-800/50 bg-zinc-950/20 relative">
-        <!-- Detalle de luz tenue -->
-        <div class="absolute left-0 top-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-emerald-500/5 blur-[100px] rounded-full pointer-events-none"></div>
-
-        <div class="max-w-6xl mx-auto">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                
-                <!-- Columna Izquierda: El problema -->
-                <div class="relative z-10">
-                    <h2 class="text-3xl md:text-5xl font-medium text-zinc-100 mb-6 tracking-tight leading-[1.1]">
-                        Tener solo redes sociales <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-emerald-600">ya no es suficiente.</span>
-                    </h2>
-                    <p class="text-zinc-400 text-lg leading-relaxed font-light mb-8">
-                        Tus clientes potenciales buscan en Google antes de tomar una decisión de compra. Un sitio web profesional es la diferencia entre ser una opción más o posicionarte como la máxima autoridad de tu sector.
-                    </p>
-                    <div class="flex items-center gap-4 text-zinc-300 text-sm font-medium bg-zinc-900/50 border border-zinc-800 w-fit px-5 py-3 rounded-full">
-                        <span class="flex items-center justify-center w-6 h-6 rounded-full bg-emerald-500/20">
-                            <svg class="w-3.5 h-3.5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
-                        </span>
-                        Tú tienes el control total, no dependes de algoritmos.
-                    </div>
-                </div>
-                
-                <!-- Columna Derecha: Los Datos (Tarjetas) -->
-                <div class="grid grid-cols-1 gap-6 relative z-10">
-                    <!-- Dato 1 -->
-                    <div class="p-8 rounded-3xl bg-zinc-900/60 border border-zinc-800/80 hover:border-zinc-700 transition-colors backdrop-blur-sm">
-                        <h4 class="text-emerald-400 font-bold text-3xl mb-3 flex items-center gap-3">
-                            24/7
-                            <span class="block w-full h-px bg-zinc-800/80"></span>
-                        </h4>
-                        <h5 class="text-zinc-100 font-medium mb-2">Ventas sin interrupción</h5>
-                        <p class="text-zinc-400 text-sm leading-relaxed font-light">Tu negocio se mantiene abierto todo el tiempo. Resuelve dudas frecuentes, muestra tus servicios y recibe mensajes de prospectos incluso mientras duermes.</p>
-                    </div>
-                    
-                    <!-- Dato 2 (Ligeramente desplazado para darle un toque moderno) -->
-                    <div class="p-8 rounded-3xl bg-zinc-900/60 border border-zinc-800/80 hover:border-zinc-700 transition-colors backdrop-blur-sm lg:ml-12">
-                        <h4 class="text-emerald-400 font-bold text-3xl mb-3 flex items-center gap-3">
-                            +75%
-                            <span class="block w-full h-px bg-zinc-800/80"></span>
-                        </h4>
-                        <h5 class="text-zinc-100 font-medium mb-2">Confianza inmediata</h5>
-                        <p class="text-zinc-400 text-sm leading-relaxed font-light">De los usuarios juzgan la credibilidad de una empresa basándose únicamente en la calidad visual y la velocidad de su sitio web.</p>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
