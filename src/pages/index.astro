@@ -6,32 +6,78 @@ import Nav from '../components/Nav.astro';
 <Layout>
     <Nav />
     
-    <header class="min-h-screen flex items-center px-8 md:px-16">
-        <div class="max-w-3xl mt-20">
-            <div class="mb-8 flex items-center gap-3">
-                <span class="relative flex h-2.5 w-2.5">
-                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                  <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
-                </span>
-                <span class="text-xs font-medium text-zinc-400 uppercase tracking-widest">Disponible para nuevos proyectos</span>
+    <header class="min-h-screen flex items-center pt-20 px-8 md:px-16 relative overflow-hidden">
+        
+        <!-- Luz de fondo Esmeralda (Glow) a la derecha -->
+        <div class="absolute top-1/4 right-0 w-[600px] h-[600px] bg-emerald-500/10 blur-[150px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-12 items-center relative z-10">
+            
+            <!-- COLUMNA IZQUIERDA: Textos y Botones -->
+            <div class="max-w-3xl">
+                <div class="mb-8 flex items-center gap-3">
+                    <span class="relative flex h-2.5 w-2.5">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                    </span>
+                    <span class="text-xs font-medium text-zinc-400 uppercase tracking-widest">Disponible para nuevos proyectos</span>
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl font-medium tracking-tight mb-8 text-zinc-100 leading-[1.1]">
+                    Creamos experiencias web <br class="hidden md:block" />
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-emerald-600">rápidas, limpias y elegantes</span>
+                </h1>
+                
+                <p class="text-lg text-zinc-400 max-w-xl mb-12 leading-relaxed font-light">
+                    Ayudamos a los negocios a destacar en el mundo digital con diseños corporativos de vanguardia e infraestructura de alto rendimiento.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-5">
+                    <!-- Botón Principal con Hover Esmeralda -->
+                    <a href="/contacto" class="bg-zinc-100 text-zinc-950 hover:bg-emerald-400 px-7 py-3.5 rounded-full text-sm font-semibold text-center transition-all duration-300 shadow-[0_0_0_rgba(52,211,153,0)] hover:shadow-[0_0_20px_rgba(52,211,153,0.4)]">
+                        Iniciar un proyecto
+                    </a>
+                    <a href="/servicios" class="bg-transparent border border-zinc-800 text-zinc-300 hover:text-zinc-100 hover:border-zinc-700 px-7 py-3.5 rounded-full text-sm font-medium text-center transition-all">
+                        Ver nuestros servicios
+                    </a>
+                </div>
             </div>
-            
-            <h1 class="text-5xl md:text-7xl font-medium tracking-tight mb-8 text-zinc-100 leading-[1.1]">
-                Creamos experiencias web <span class="text-zinc-500">rápidas, limpias y elegantes</span>
-            </h1>
-            
-            <p class="text-lg text-zinc-400 max-w-xl mb-12 leading-relaxed font-light">
-                Ayudamos a los negocios a destacar en el mundo digital con diseños corporativos de vanguardia e infraestructura de alto rendimiento.
-            </p>
-            
-            <div class="flex flex-col sm:flex-row gap-5">
-                <a href="/contacto" class="bg-zinc-100 text-zinc-950 hover:bg-white px-7 py-3.5 rounded-full text-sm font-semibold text-center transition-all">
-                    Iniciar un proyecto
-                </a>
-                <a href="/servicios" class="bg-transparent border border-zinc-800 text-zinc-300 hover:text-zinc-100 hover:border-zinc-700 px-7 py-3.5 rounded-full text-sm font-medium text-center transition-all">
-                    Ver nuestros servicios
-                </a>
+
+            <!-- COLUMNA DERECHA: Elemento Visual Premium (Solo visible en PC) -->
+            <div class="hidden lg:flex justify-end relative">
+                
+                <!-- Tarjeta de cristal flotante -->
+                <div class="relative w-[400px] rounded-3xl bg-zinc-900/40 backdrop-blur-xl border border-zinc-800/80 p-8 shadow-2xl hover:-translate-y-2 transition-transform duration-500">
+                    
+                    <!-- Botones estilo macOS -->
+                    <div class="flex items-center gap-2 mb-8">
+                        <div class="w-3 h-3 rounded-full bg-zinc-700"></div>
+                        <div class="w-3 h-3 rounded-full bg-zinc-700"></div>
+                        <div class="w-3 h-3 rounded-full bg-zinc-700"></div>
+                    </div>
+                    
+                    <!-- Líneas de "código" animadas -->
+                    <div class="space-y-4 mb-10 opacity-70">
+                        <div class="h-2.5 w-24 bg-zinc-700 rounded-full"></div>
+                        <div class="h-2.5 w-full bg-zinc-800 rounded-full"></div>
+                        <div class="h-2.5 w-4/5 bg-zinc-800 rounded-full"></div>
+                        <div class="h-2.5 w-full bg-zinc-800 rounded-full"></div>
+                    </div>
+                    
+                    <!-- Medidor de Rendimiento 100% -->
+                    <div class="flex items-center gap-6 p-4 rounded-2xl bg-zinc-950/50 border border-zinc-800/50">
+                        <div class="relative flex items-center justify-center w-16 h-16 rounded-full border-4 border-emerald-500 shadow-[0_0_15px_rgba(52,211,153,0.2)] text-emerald-400 font-bold text-xl">
+                            100
+                        </div>
+                        <div>
+                            <p class="text-zinc-100 font-medium">Rendimiento Perfecto</p>
+                            <p class="text-zinc-500 text-sm">Optimizado para SEO y Ventas</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+
         </div>
     </header>
 
@@ -45,9 +91,9 @@ import Nav from '../components/Nav.astro';
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Beneficio 1 -->
                 <div class="p-8 rounded-3xl bg-zinc-900/40 border border-zinc-800/50 hover:bg-zinc-900/80 transition-colors">
-                    <div class="h-12 w-12 rounded-full bg-zinc-800 flex items-center justify-center mb-6">
-                        <!-- Icono SVG: Rayo -->
-                        <svg class="w-6 h-6 text-zinc-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="h-12 w-12 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mb-6 text-emerald-400">
+                        <!-- Tu SVG del rayo va aquí (quítale el class="text-zinc-300") -->
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                         </svg>
                     </div>
@@ -59,9 +105,9 @@ import Nav from '../components/Nav.astro';
 
                 <!-- Beneficio 2 -->
                 <div class="p-8 rounded-3xl bg-zinc-900/40 border border-zinc-800/50 hover:bg-zinc-900/80 transition-colors">
-                    <div class="h-12 w-12 rounded-full bg-zinc-800 flex items-center justify-center mb-6">
-                        <!-- Icono SVG: Celular -->
-                        <svg class="w-6 h-6 text-zinc-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="h-12 w-12 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mb-6 text-emerald-400">
+                        <!-- Tu SVG del celular va aquí -->
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"></path>
                         </svg>
                     </div>
@@ -73,9 +119,9 @@ import Nav from '../components/Nav.astro';
 
                 <!-- Beneficio 3 -->
                 <div class="p-8 rounded-3xl bg-zinc-900/40 border border-zinc-800/50 hover:bg-zinc-900/80 transition-colors">
-                    <div class="h-12 w-12 rounded-full bg-zinc-800 flex items-center justify-center mb-6">
-                        <!-- Icono SVG: Gráfica de crecimiento / Ventas -->
-                        <svg class="w-6 h-6 text-zinc-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="h-12 w-12 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mb-6 text-emerald-400">
+                        <!-- Tu SVG de la gráfica va aquí -->
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"></path>
                         </svg>
                     </div>
